@@ -1,0 +1,106 @@
+﻿1.处理 异常信息的方法 
+	1. try catch中 throw new RuntimeErrorException("商品添加失败");
+	2.在jsp中 <%@page isErrorPage="true" pageEncoding="utf-8"%>
+	3.在 body中 <%= exception.getMessage %>
+	4.在web.xml文件中
+		<error-page>
+			<error-code>500</error-code>
+			<location>/backend/500.jsp</location>
+		</error-page>
+		
+2.相对路径和绝对路径
+	相对路径: 不以斜杠(/)开头的路径
+	绝对路径：以斜杠(/)开头的路径
+http://code.tarena.com.cn/CGBCode/cgb1712/04_javaweb/day18/
+
+分页插件page
+https://blog.csdn.net/qq_33624284/article/details/72828977 
+
+layer.msg('该字段已存在，添加失败!',{icon:5,time:1000});
+3.序列化(控制序列化的力度)
+	
+	
+	gc流程  jvm垃圾回收机制
+	
+	
+	
+    线程的基本概念；
+    单个线程的创建方式；
+    线程池的原理及其应用；
+    采用线程池维护线程的好处；
+    内存角度分析多线程问题；
+    并发问题分析方法；
+    并发模型中常用的队列。
+https://github.com/li-zi-chao
+
+mybatis 中拦截器  分页插件 通用mapper 逆向工程 优化
+
+
+单例模式:属于一种创建模式(与对象的创建有关)其含义是:保证一个类的对象在内存中有一份
+
+
+@Scheduled
+https://blog.csdn.net/qq_33556185/article/details/51852537
+
+
+<input type="file" class="input file" id="fj" multiple="multiple" onchange="ajaxFileUploads(this,'upload/uploadFiles.json')"  name="files">
+
+
+
+
+ function ajaxFileUploads(e, url) {
+
+ 		var id = $(e).attr('id');
+ 		
+ 		$.ajaxFileUpload({
+ 			url : url,
+ 			secureuri : false,
+ 			fileElementId : id,
+ 			dataType : 'json',
+ 			success : function(data) // 服务器成功响应处理函数
+ 			{
+ 				layer.msg("上传成功！");
+ 				console.log("服务器路径：");
+ 				var listSeverPath = data.data.listServerPath;
+ 				$('#serverPath').val(listSeverPath);
+ 				console.log("本地图片名称：");
+ 				var listLocalPath = data.data.listLocalPath;
+ 				$('#fileName').val(listLocalPath);
+ 			},
+ 			error : function() {
+ 				layer.msg("上传失败！");
+ 			}
+ 		});
+ 		return false;
+ 	} 
+
+
+shiro 多realm
+https://blog.csdn.net/tanzhen_1314/article/details/52121347
+https://blog.csdn.net/xiangwanpeng/article/details/54802509
+
+sql语句
+https://wenku.baidu.com/view/ea9f20bbf90f76c661371a97.html
+
+between and
+
+
+单例模式 工厂模式
+
+
+
+算法
+https://blog.csdn.net/hguisu/article/details/7776068
+
+
+
+
+
+
+
+
+
+
+
+
+
